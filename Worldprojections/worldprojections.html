@@ -8,13 +8,13 @@
 <body>
     <h1>In this project I learned how to display images in different projections</h1>  
     <p>I used the Natural Earth dataset to create the base map, and then using the Indicatrix plugin, I added an indicatrix layer to the basemap.
-        Finally, I created maps by trying out different world projections.
+        Finally, I created maps by changing the CRS (Coordinate Reference System) in QGIS and trying out different world projections.
     </p>
     
     <h2>WGS84 Projection</h2>
     <h3>Standard projection used for GPS, Google Maps, and other webmaps.
         Based on the indicatrix, this projection is distorted in both shape and size
-        as the distance from the equator.
+        as the distance from the equator increases.
     </h3>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
@@ -29,7 +29,7 @@
     <h2>Pseudo Mercator Projection</h2>
     <h3>Pseudo Mercator Projection is similar to the 
         Mercator projection, except that the projection is done using a sphere instead of an ellipsoid. It preserves shape
-        throughout the map; however size distorted the farther a location is from the equator.
+        throughout the map; however size is distorted the farther a location is from the equator.
     </h3>
     <a href="./maps/3857_Pseudo_Mercator.png">
     <img src="./maps/3857_Pseudo_Mercator.png" alt="Pseudo Mercator" width='500px'>
@@ -44,7 +44,7 @@
     </a> 
     <h2>Cylindrical Equal Area World Projection</h2>
     <h3>This projection is interesting because it appears to preserve both shape and size in the central regions of the map,
-        but a dramatic distortion is btoh shape and size are observable  in the northernmost and southernmost regions.
+        but a dramatic distortion is both shape and size is observable in the northernmost and southernmost regions.
     </h3>
     <a href="./maps/54034_World_Cylin_Equ_Are.png">
     <img src="./maps/54034_World_Cylin_Equ_Are.png" alt="Cylindrical Equal Area" width='500px'>
@@ -58,7 +58,7 @@
     </a>
     <h2>North Pole Azimuthal Equidistant Projection</h2>
     <h3>This projection does not differ too gratly from the World Equidistant Conic Projection because based on the indicatrix,
-        the least distorted areas are still those surrounding the North Pole. The shape distortion near the South Pole in this azimuthal projection
+        the least distorted areas are still those surrounding the North Pole. Nevertheless, the shape distortion near the South Pole in this azimuthal projection
         is even more pronounced than in the aforementioned conic projeciton.
     </h3>
     <a href="./maps/102016_North_Pole_Azim_Equ_Dist.png">
@@ -74,7 +74,7 @@
     <h2>Sphere Two Point Equidistant Projection</h2>
     <h3>Based on the indicatrix, it appears that this projection preserves shape for the most part except maybe in the easternmost, 
         westernmost, and southernmost areas. Size on the other hand in distorted most in areas farthest form the prime meridian and the equator, although size 
-        appears to be more uniform norht of the equator than southe of the equator, meaning the North Pole is less distorted than the South Pole.</h3>
+        appears to be more uniform north of the equator than south of the equator, meaning the North Pole is less distorted than the South Pole.</h3>
     <a href="./maps/53031_Sphere_TwoPt_Equ_Dist.png">
     <img src="./maps/53031_Sphere_TwoPt_Equ_Dist.png" alt="Sphere Two Point Equidistant" width='500px'>
     </a>
