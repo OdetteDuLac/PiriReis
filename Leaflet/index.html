@@ -46,7 +46,7 @@
         pointToLayer: function (feature, latlng) { // 
         return L.marker(latlng, {icon: stadiumIcon});}}) // c 
         .bindPopup(stadiumPopup, {
-            maxWidth: "auto"}) // d
+            maxWidth: 300}) // d
         .addTo(map); //
 
         var libraryIcon = L.icon({
@@ -61,7 +61,7 @@
         pointToLayer: function (feature, latlng) { // 
         return L.marker(latlng, {icon: libraryIcon});}}) // c 
         .bindPopup(libraryPopup, {
-            maxWidth: "auto"}) // d
+            maxWidth: 300}) // d
         .addTo(map); //
 
         var carolinaInnIcon = L.icon({
@@ -76,7 +76,7 @@
         pointToLayer: function (feature, latlng) { // 
         return L.marker(latlng, {icon: carolinaInnIcon});}}) // c 
         .bindPopup(carolinaInnPopup, {
-            maxWidth: "auto"}) // d
+            maxWidth: 300}) // d
         .addTo(map); //
             
     </script>
